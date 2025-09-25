@@ -2,7 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Helper function to create a custom icon with a given color
 const createCustomIcon = (color) => {
   return L.divIcon({
     className: 'custom-marker-icon',
@@ -11,18 +10,17 @@ const createCustomIcon = (color) => {
   });
 };
 
-const Map = ({ trips = [], tripColors }) => {
+const Map = ({ trips = [] }) => {
   return (
-    <MapContainer className="h-80 lg:h-[80vh] flex-1 w-full" center={[51.2093, 3.2247]} zoom={5}>
+    <MapContainer className="h-80 lg:h-[400px] flex-1 w-full" center={[51.2093, 3.2247]} zoom={5}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {/* Display cities from trips with permanent colors */}
       {trips.map((trip) =>
-        trip.cities.map((city, cityIndex) => (
+        trip.cities.map((city, i) => (
           <Marker
-            key={`${trip.name}-${cityIndex}`}
+            key={`${trip.name}-${i}`}
             position={[city.lat, city.lng]}
-            icon={createCustomIcon(tripColors[trip.name])}
+            icon={createCustomIcon(trip.color)}
           >
             <Popup>{`${city.city}, ${city.country} (${trip.name})`}</Popup>
           </Marker>

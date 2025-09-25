@@ -1,0 +1,269 @@
+[
+  {
+    "name": "China 2025",
+    "year": 2025,
+    "color": "#E63946",
+    "cities": [
+      { "city": "Beijing", "country": "China", "countryCode": "CN", "continent": "Asia", "lat": 39.89313931719858, "lng": 116.47027084239518 },
+      { "city": "Xian", "country": "China", "countryCode": "CN", "continent": "Asia", "lat": 34.261036693571285, "lng": 108.940174 },
+      { "city": "Chongqing", "country": "China", "countryCode": "CN", "continent": "Asia", "lat": 29.59529540702982, "lng": 108.94227994725189 },
+      { "city": "Zhangjiajie", "country": "China", "countryCode": "CN", "continent": "Asia", "lat": 29.117878, "lng": 110.481469 },
+      { "city": "Shanghai", "country": "China", "countryCode": "CN", "continent": "Asia", "lat": 31.230416, "lng": 121.473701 }
+    ]
+  },
+    {
+      "name": "Australia 2025",
+      "year": 2025,
+      "color": "#0077B6",
+      "cities": [
+        { "city": "Batemans Bay", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -35.707218, "lng": 150.178289 },
+        { "city": "Canberra", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -35.297591, "lng": 149.101268 },
+        { "city": "Sydney", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -33.889038, "lng": 151.205039 },
+        { "city": "Byron Bay", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -28.648333, "lng": 153.617778 },
+        { "city": "Brisbane", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -27.468968, "lng": 153.023499 },
+        { "city": "Noosa", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -26.318141, "lng": 152.931409 },
+        { "city": "Rainbow Beach", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -25.903842, "lng": 153.090663 },
+        { "city": "K'gari", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -25.246720, "lng": 153.146804 },
+        { "city": "Airlie Beach", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -20.272494, "lng": 148.718147 },
+        { "city": "Whitsunday Islands", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -20.241647, "lng": 148.971305 },
+        { "city": "Magnetic Island", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -19.142142, "lng": 146.833549 },
+        { "city": "Cairns", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -16.923504, "lng": 145.773296 },
+        { "city": "Port Douglas", "country": "Australia", "countryCode": "AU", "continent": "Oceania", "lat": -16.484598, "lng": 145.463629 }
+      ]
+    },
+    {
+      "name": "2025 Winter Trip",
+      "year": 2025,
+      "color": "#F3722C",
+      "cities": [
+        { "country": "Belgium", "city": "Brussels", "countryCode": "BE", "continent": "Europe", "lat": 50.850346, "lng": 4.351721 },
+        { "country": "Belgium", "city": "Bruges", "countryCode": "BE", "continent": "Europe", "lat": 51.2093, "lng": 3.2247 },
+        { "country": "Belgium", "city": "Dinant", "countryCode": "BE", "continent": "Europe", "lat": 50.260658, "lng": 4.912170 },
+        { "country": "Germany", "city": "Aachen", "countryCode": "DE", "continent": "Europe", "lat": 50.775345, "lng": 6.083887 },
+        { "country": "Germany", "city": "Monschau", "countryCode": "DE", "continent": "Europe", "lat": 50.5549, "lng": 6.2401 },
+        { "country": "Belgium", "city": "Liege", "countryCode": "BE", "continent": "Europe", "lat": 50.643960, "lng": 5.570740 },
+        { "country": "Luxembourg", "city": "Luxembourg", "countryCode": "LU", "continent": "Europe", "lat": 49.611277, "lng": 6.129799 }
+      ]
+    },
+    {
+      "name": "2024 Italy Trip",
+      "year": 2024,
+      "color": "#FFD60A",
+      "cities": [
+        { "city": "Rome", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 41.893320, "lng": 12.482932 },
+        { "city": "Vatican City", "country": "Vatican", "countryCode": "VA", "continent": "Europe", "lat": 41.903411, "lng": 12.452853 },
+        { "city": "Torre del Greco", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 40.787921, "lng": 14.368281 },
+        { "city": "Pompei", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 40.749127, "lng": 14.500642 },
+        { "city": "Sorrento", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 40.624906, "lng": 14.374836 }
+      ]
+    },
+    {
+      "name": "2022 Winter Interrail",
+      "year": 2022,
+      "color": "#2D6A4F",
+      "cities": [
+        { "city": "Nuremberg", "country": "Germany", "countryCode": "DE", "continent": "Europe", "lat": 49.453872, "lng": 11.077298 },
+        { "city": "Rothenburg Ob Der Tauber", "countryCode": "DE", "continent": "Europe", "country": "Germany", "lat": 49.376271, "lng": 10.178318 },
+        { "city": "Salzburg", "country": "Austria", "countryCode": "AT", "continent": "Europe", "lat": 47.798135, "lng": 13.046481 },
+        { "city": "Hallstatt", "country": "Austria", "countryCode": "AT", "continent": "Europe", "lat": 47.562170, "lng": 13.648670 },
+        { "city": "Innsbruck", "country": "Austria", "countryCode": "AT", "continent": "Europe", "lat": 47.265430, "lng": 11.392769 },
+        { "city": "Venice", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 45.437191, "lng": 12.334590 }
+      ]
+    },
+    {
+      "name": "2022 Summer Interrail",
+      "year": 2022,
+      "color": "#6A4C93",
+      "cities": [
+        { "city": "Colmar", "country": "France", "countryCode": "FR", "continent": "Europe", "lat": 48.077752, "lng": 7.357964 },
+        { "city": "Paris", "country": "France",  "countryCode": "FR", "continent": "Europe", "lat": 48.853495, "lng": 2.348391 },
+        { "country": "Belgium", "city": "Brussels", "countryCode": "BE", "continent": "Europe", "lat": 50.850346, "lng": 4.351721 },
+        { "city": "Amsterdam", "country": "Netherlands", "countryCode": "NL", "continent": "Europe", "lat": 52.372707, "lng": 4.890976 },
+        { "city": "Berlin", "country": "Germany", "countryCode": "DE", "continent": "Europe", "lat": 52.517037, "lng": 13.388860 },
+        { "city": "Prague", "country": "Czechia", "countryCode": "CZ", "continent": "Europe", "lat": 50.059629, "lng": 14.446459 },
+        { "city": "Vienna", "country": "Austria", "countryCode": "AT", "continent": "Europe", "lat": 48.208354, "lng": 16.372504 },
+        { "city": "Ljubljana", "country": "Slovenia", "countryCode": "SI", "continent": "Europe", "lat": 46.049432, "lng": 14.506330 },
+        { "city": "Bled", "country": "Slovenia", "countryCode": "SI", "continent": "Europe", "lat": 46.368420, "lng": 14.110060 },
+        { "city": "Lauterbrunnen", "country": "Switzerland", "countryCode": "CH", "continent": "Europe", "lat": 46.593904, "lng": 7.907802 },
+        { "city": "Geneva", "country": "Switzerland", "countryCode": "CH", "continent": "Europe", "lat": 46.225651, "lng": 6.143921 },
+        { "city": "Sitges", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 41.236671, "lng": 1.822814 },
+        { "city": "Barcelona", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 41.757870, "lng": 2.031182 }
+      ]
+    },
+    {
+      "name": "2022 USA Trip",
+      "year": 2022,
+      "color": "#008080",
+      "cities": [
+        { "city": "Boston, Massachusetts", "country": "USA", "countryCode": "US", "continent": "North America", "lat": 42.355433, "lng": -71.060511 },
+        { "city": "Salem, Massachusetts", "country": "USA", "countryCode": "US", "continent": "North America", "lat": 42.519529, "lng": -70.896723 },
+        { "city": "Provincetown, Massachusetts", "country": "USA", "countryCode": "US", "continent": "North America", "lat": 42.052561, "lng": -70.185864 },
+        { "city": "New York City, New York", "country": "USA", "countryCode": "US", "continent": "North America", "lat": 40.712728, "lng": -74.006015 },
+        { "city": "Lincoln, New Hampshire", "country": "USA", "countryCode": "US", "continent": "North America", "lat": 44.045750, "lng": -71.670598 }
+      ]
+    },
+    {
+      "name": "United Kingdom Trip",
+      "year": null,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "London", "country": "United Kingdom", "countryCode": "GB", "continent": "Europe", "lat": 51.505409, "lng": -0.125999 },
+        { "city": "Liverpool", "country": "United Kingdom", "countryCode": "GB", "continent": "Europe", "lat": 53.406953, "lng": -2.992401 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2017,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "London", "country": "United Kingdom", "countryCode": "GB", "continent": "Europe", "lat": 51.505409, "lng": -0.125999 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2019,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Stockholm", "country": "Sweden", "countryCode": "SE", "continent": "Europe", "lat": 59.322821, "lng": 18.067703 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2023,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Munich", "country": "Germany", "countryCode": "DE", "continent": "Europe", "lat": 48.137108, "lng": 11.575382 },
+        { "city": "Stuttgart", "country": "Germany", "countryCode": "DE", "continent": "Europe", "lat": 48.778449, "lng": 9.180013 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2018,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Zwiesel", "country": "Germany", "countryCode": "DE", "continent": "Europe", "lat": 49.013027, "lng": 13.230762 }
+      ]
+    },
+    {
+      "name": "Spain Trip",
+      "year": null,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Tenerife", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 28.293578, "lng": -16.621447 },
+        { "city": "Salou", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 41.076819, "lng": 1.144041 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2018,
+      "color": "#A8A8A8",
+      "cities": [
+      { "city": "Barcelona", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 41.757870, "lng": 2.031182 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2017,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Malaga", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 36.721508, "lng": -4.421911 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2019,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Lloret De Mar", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 41.697350, "lng": 2.839239 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2024,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Gran Canaria", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 27.958000, "lng": -15.606231 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2023,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Gran Canaria", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 27.958000, "lng": -15.606231 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2018,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Madrid", "country": "Spain", "countryCode": "ES", "continent": "Europe", "lat": 40.416215, "lng": -3.707199 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2024,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Bordeaux", "country": "France", "countryCode": "FR", "continent": "Europe", "lat": 44.841438, "lng": -0.579185 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2017,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Rome", "country": "Italy", "countryCode": "IT", "continent": "Europe", "lat": 41.893320, "lng": 12.482932 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2020,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Paris", "country": "France", "countryCode": "FR", "continent": "Europe", "lat": 48.853495, "lng": 2.348391  }
+      ]
+    },
+        {
+      "name": "Other",
+      "year": 2025,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Paris", "country": "France", "countryCode": "FR", "continent": "Europe", "lat": 48.853495, "lng": 2.348391  }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2019,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Ginestas", "country": "France", "countryCode": "FR", "continent": "Europe", "lat": 43.267576, "lng": 2.872236 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2023,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Marrakesh", "country": "Morocco", "countryCode": "MA", "continent": "Africa", "lat": 31.625826, "lng": -7.989161 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2017,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Gibraltar", "country": "Gibraltar", "countryCode": "GI", "continent": "Europe", "lat": 36.128593, "lng": -5.347476 }
+      ]
+    },
+    {
+      "name": "Other",
+      "year": 2024,
+      "color": "#A8A8A8",
+      "cities": [
+        { "city": "Budapest", "country": "Hungary", "countryCode": "HU", "continent": "Europe", "lat": 47.497994, "lng": 19.040359 }
+      ]
+    }
+
+]
