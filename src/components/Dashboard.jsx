@@ -1,25 +1,32 @@
+// Dashboard.jsx
 import { useState } from 'react';
-import Map from './Map';
+import TravelMap from './TravelMap';
 import Legend from './Legend';
 import trips from '../data/trips.json';
 
 const Dashboard = () => {
-  const [selectedTrip, setSelectedTrip] = useState(null);
+  const [selectedGroup, setSelectedGroup] = useState(null);
+  const [legendOpen, setLegendOpen] = useState(false);  // <-- NEW
 
-  const handleTripClick = (trip) => {
-    setSelectedTrip(
-      selectedTrip && selectedTrip.name === trip.name ? null : trip
+  const handleTripClick = (group) => {
+    setSelectedGroup(
+      selectedGroup && selectedGroup.name === group.name ? null : group
     );
   };
 
   return (
     <div className="flex flex-col h-screen w-full">
       <main className="flex-grow flex flex-col lg:flex-row lg:gap-6 gap-4">
-        <Map trips={selectedTrip ? [selectedTrip] : trips} />
+        <TravelMap
+          trips={selectedGroup ? selectedGroup.trips : trips}
+          legendOpen={legendOpen}   // <-- pass down
+        />
         <Legend
           trips={trips}
           onTripClick={handleTripClick}
-          selectedTrip={selectedTrip}
+          selectedTrip={selectedGroup}
+          open={legendOpen}
+          setOpen={setLegendOpen}   // <-- let Legend control it
         />
       </main>
     </div>

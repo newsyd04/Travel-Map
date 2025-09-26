@@ -10,9 +10,17 @@ const createCustomIcon = (color) => {
   });
 };
 
-const Map = ({ trips = [] }) => {
+const TravelMap = ({ trips = [], legendOpen = false }) => {
   return (
-    <MapContainer className="h-80 lg:h-[400px] flex-1 w-full" center={[51.2093, 3.2247]} zoom={5}>
+    <MapContainer
+      className="h-64 sm:h-80 lg:h-[400px] w-full rounded-lg z-0 shadow-md"
+      center={[51.2093, 3.2247]}
+      zoom={1}
+      scrollWheelZoom={!legendOpen}
+      dragging={!legendOpen}
+      doubleClickZoom={!legendOpen}
+      zoomControl={!legendOpen}
+    >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
       {trips.map((trip) =>
@@ -30,4 +38,4 @@ const Map = ({ trips = [] }) => {
   );
 };
 
-export default Map;
+export default TravelMap;

@@ -50,9 +50,7 @@ const CountriesGallery = ({ trips }) => {
   }, [countries]);
 
   return (
-    <div className="mx-80 p-6">
-
-
+    <div className="w-full max-w-7xl mx-auto p-6">
       {/* Render Groups */}
     {groupEntries.map(([group, items]) => (
     <div key={group} className="mb-8">
@@ -62,7 +60,7 @@ const CountriesGallery = ({ trips }) => {
         >
         {group}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {items.map((c, i) => (
             <CountryCard key={`${c.country}-${c.year}-${i}`} {...c} />
         ))}
