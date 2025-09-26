@@ -15,7 +15,7 @@ const TravelMap = ({ trips = [], legendOpen = false }) => {
     <MapContainer
       className="h-64 sm:h-80 lg:h-[400px] w-full rounded-lg z-0 shadow-md"
       center={[51.2093, 3.2247]}
-      zoom={1}
+      zoom={1.5}
       scrollWheelZoom={!legendOpen}
       dragging={!legendOpen}
       doubleClickZoom={!legendOpen}
