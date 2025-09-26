@@ -3,7 +3,7 @@ import ReactCountryFlag from "react-country-flag";
 
 const CountryCard = ({ country, cities, year, code }) => {
   return (
-    <div className="bg-white shadow rounded-lg p-4 flex flex-col items-center text-center">
+    <div className="bg-white border-gray-200 border-2 rounded-lg p-4 flex flex-col items-center text-center">
       <ReactCountryFlag
         countryCode={code}
         svg
