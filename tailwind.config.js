@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         antonio: ['Antonio', 'sans-serif'],
+        kapakana: ['Kapakana', 'sans-serif'],
       },
     },
   },

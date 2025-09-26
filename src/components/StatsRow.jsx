@@ -14,7 +14,7 @@ const StatsRow = () => {
   const uniqueContinents = new Set(allCities.map(c => c.continent)).size;
 
   return (
-    <div className="grid grid-cols-3 text-center sm:grid-cols-3 gap-4 w-full max-w-5xl px-4 py-6">
+    <div className="grid grid-cols-3 font-antonio text-4xl text-center sm:grid-cols-3 gap-4 w-full max-w-5xl px-4 py-6">
       <StatCard title="Countries Visited" value={uniqueCountries} />
       <StatCard title="Cities Visited" value={uniqueCities} />
       <StatCard title="Continents Visited" value={uniqueContinents} />

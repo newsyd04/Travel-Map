@@ -34,7 +34,7 @@ const CountriesGallery = ({ trips }) => {
 
    const map = new Map();
     countries.forEach(c => {
-      const key = c.year ?? "Unknown"; // could be number or "Unknown"
+      const key = c.year ?? " < 2016"; // could be number or "Unknown"
       if (!map.has(key)) map.set(key, []);
       map.get(key).push(c);
     });
@@ -42,8 +42,8 @@ const CountriesGallery = ({ trips }) => {
     // Sort: newest -> oldest, "Unknown" last
     return Array.from(map.entries())
       .sort(([a], [b]) => {
-        if (a === "Unknown") return 1;
-        if (b === "Unknown") return -1;
+        if (a === " < 2016") return 1;
+        if (b === " < 2016") return -1;
         return Number(b) - Number(a);
       })
       .map(([key, items]) => [String(key), items]); // ensure label is a string
@@ -55,12 +55,12 @@ const CountriesGallery = ({ trips }) => {
     {groupEntries.map(([group, items]) => (
     <div key={group} className="mb-8">
         <h2
-        className={`text-xl font-bold mb-3 text-blue-700 text-center border-b border-gray-300 pb-2"
+        className={`text-3xl font-kapakana font-extrabold mb-3 text-black text-center border-b border-gray-300 pb-2"
         }`}
-        >
-        {group}
+        > ~
+        {group}~
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
         {items.map((c, i) => (
             <CountryCard key={`${c.country}-${c.year}-${i}`} {...c} />
         ))}
