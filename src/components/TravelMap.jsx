@@ -1,9 +1,11 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-markercluster';
 import 'leaflet/dist/leaflet.css';
+import 'react-leaflet-markercluster/styles';
 import L from 'leaflet';
 
-const createCustomIcon = (color) => {
-  return L.divIcon({
+const createCustomIcon = (color) =>
+  L.divIcon({
     className: 'custom-marker-icon',
     html: `<div style="
       background-color: ${color};
@@ -15,6 +17,14 @@ const createCustomIcon = (color) => {
     "></div>`,
     iconSize: [16, 16],
     iconAnchor: [8, 8],
+  });
+
+const createClusterIcon = (cluster) => {
+  const count = cluster.getChildCount();
+  return L.divIcon({
+    className: '',
+    html: `<div class="custom-cluster-icon">${count}</div>`,
+    iconSize: [32, 32],
   });
 };
 
@@ -37,21 +47,35 @@ const TravelMap = ({ trips = [], legendOpen = false }) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
       />
 
-      {trips.map((trip) =>
-        trip.cities.map((city, i) => (
-          <Marker
-            key={`${trip.name}-${i}`}
-            position={[city.lat, city.lng]}
-            icon={createCustomIcon(trip.color)}
-          >
-            <Popup>
-              <strong>{city.city}</strong>
-              <br />
-              <span className="text-ink-400">{city.country} · {trip.name}</span>
-            </Popup>
-          </Marker>
-        ))
-      )}
+      <MarkerClusterGroup
+        iconCreateFunction={createClusterIcon}
+        spiderfyOnMaxZoom
+        showCoverageOnHover={false}
+        maxClusterRadius={36}
+        spiderLegPolylineOptions={{
+          weight: 1.5,
+          color: '#c45a3e',
+          opacity: 0.6,
+        }}
+      >
+        {trips.map((trip) =>
+          trip.cities.map((city, i) => (
+            <Marker
+              key={`${trip.name}-${trip.year}-${i}`}
+              position={[city.lat, city.lng]}
+              icon={createCustomIcon(trip.color)}
+            >
+              <Popup>
+                <strong>{city.city}</strong>
+                <br />
+                <span style={{ color: '#5a6373' }}>
+                  {city.country} · {trip.name} ({trip.year})
+                </span>
+              </Popup>
+            </Marker>
+          ))
+        )}
+      </MarkerClusterGroup>
     </MapContainer>
   );
 };
