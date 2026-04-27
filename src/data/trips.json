@@ -1,16 +1,16 @@
 [
   {
-    "name": "Liverpool 2026",
+    "name": "Other",
     "year": 2026,
-    "color": "#b85450",
+    "color": "#A8A8A8",
     "cities": [
       { "city": "Liverpool", "country": "United Kingdom", "countryCode": "GB", "continent": "Europe", "lat": 53.4084, "lng": -2.9916 }
     ]
   },
   {
-    "name": "London 2026",
+    "name": "Other",
     "year": 2026,
-    "color": "#3d5a80",
+    "color": "#A8A8A8",
     "cities": [
       { "city": "London", "country": "United Kingdom", "countryCode": "GB", "continent": "Europe", "lat": 51.5074, "lng": -0.1278 }
     ]
