@@ -1,18 +1,23 @@
-import React from 'react';
 import ReactCountryFlag from "react-country-flag";
 
 const CountryCard = ({ country, cities, year, code }) => {
   return (
-    <div className="bg-white border-gray-200 border-2 rounded-lg p-4 flex flex-col items-center text-center">
+    <div className="bg-parchment-50 border rule-parchment rounded-xl p-4 flex flex-col items-center text-center transition hover:border-terracotta-500/40 hover:shadow-warm">
       <ReactCountryFlag
         countryCode={code}
         svg
-        style={{ fontSize: "2em" }}
-        className="mb-2"
+        style={{ width: "2.4em", height: "1.7em" }}
+        className="mb-3 rounded-sm shadow-ring"
       />
-      <h2 className="text-lg font-bold">{country}</h2>
-      <p className="text-sm text-gray-600">{cities.join(", ")}</p>
-      <p className="text-xs text-gray-500 mt-1">Visited in {year}</p>
+      <h4 className="font-display text-lg text-ink-900 leading-tight">
+        {country}
+      </h4>
+      <p className="mt-1 text-xs text-ink-400 leading-snug">
+        {cities.length} {cities.length === 1 ? "city" : "cities"} · {year}
+      </p>
+      <p className="mt-2 text-[11px] text-ink-500/80 leading-relaxed line-clamp-2">
+        {cities.join(", ")}
+      </p>
     </div>
   );
 };

@@ -2,14 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-parchment-100 text-ink-900 font-sans antialiased;
+    margin: 0;
+    font-feature-settings: "kern", "liga";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+    line-height: 1.05;
+  }
+}
+
+@layer utilities {
+  /* Subtle paper grain on parchment surfaces */
+  .paper-texture {
+    position: relative;
+  }
+  .paper-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: radial-gradient(
+        rgba(58, 35, 20, 0.04) 1px,
+        transparent 1px
+      ),
+      radial-gradient(rgba(58, 35, 20, 0.03) 1px, transparent 1px);
+    background-size: 4px 4px, 6px 6px;
+    background-position: 0 0, 2px 2px;
+  }
+
+  /* Hairline divider on parchment */
+  .rule-parchment {
+    border-color: rgba(31, 37, 50, 0.12);
+  }
+
+  /* Decorative dot-flanked section divider */
+  .divider-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .divider-dots::before,
+  .divider-dots::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.4;
+  }
+}
+
+/* Marker cluster styling (kept from previous) */
 .custom-cluster-icon {
-  background-color: #3182ce; /* Tailwind's 'blue-600' */
+  background-color: #c45a3e;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: bold;
+  color: #fbf7ec;
+  font-weight: 700;
+  font-family: "Antonio", sans-serif;
+  border: 2px solid #fbf7ec;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* Leaflet popup polish */
+.leaflet-popup-content-wrapper {
+  border-radius: 6px !important;
+  background: #fbf7ec !important;
+}
+.leaflet-popup-content {
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  color: #1f2532 !important;
+  margin: 10px 14px !important;
+}
+.leaflet-popup-tip {
+  background: #fbf7ec !important;
 }
